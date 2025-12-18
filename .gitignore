@@ -1,0 +1,39 @@
+# --- Secrets - NEVER commit these ---
+*.pem
+*.key
+credentials.json
+.env
+profiles.yml
+*.p8
+config.py
+airflow/dags/config.py
+snowflake_key.p8
+keys/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# --- Airflow ---
+logs/
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- dbt ---
+target/
+dbt_packages/
+
+# --- Data & Temp files ---
+*.tmp
+placeholder.txt
+*.csv
+*.json
+data/
