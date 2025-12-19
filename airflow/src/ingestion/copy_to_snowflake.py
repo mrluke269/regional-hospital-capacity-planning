@@ -40,7 +40,6 @@ def copy_data_to_snowflake(key):
         FORCE = TRUE;"""
 
         cs.execute(copy_command)
-
         result = cs.fetchone()
         print(result)
         

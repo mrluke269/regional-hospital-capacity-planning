@@ -8,6 +8,11 @@ RATE_LIMIT_DELAY = 1
 
 
 def extract_hospital_capacity(max_records=None):
+    """
+    Extract hospital capacity data from CDC API.
+    - max_records=None: fetch all records (production)
+    - max_records=N: fetch N records (testing)
+    """
     results_combined = []
     # Get total count of records
     count_response = requests.get(base_url, params={"$select": "count(*)"})
@@ -35,6 +40,7 @@ def extract_hospital_capacity(max_records=None):
         data = response.json()
         results_combined.extend(data)
         print(f"Extracted {len(data)} records for testing")
+        
     print(f"Total records extracted: {len(results_combined)}")
     return results_combined
 
