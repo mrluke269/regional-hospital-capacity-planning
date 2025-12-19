@@ -12,7 +12,7 @@ This project integrates two CDC data sources to enable regional capacity plannin
 **Endpoint:** `https://data.cdc.gov/resource/ua7e-t2fy.json`  
 **Update Frequency:** Weekly  
 **Grain:** Weekly, State-level  
-**Date Range:** 2024-10 to 2025-09  
+
 
 ### Selected Columns
 
@@ -38,7 +38,6 @@ This project integrates two CDC data sources to enable regional capacity plannin
 **Endpoint:** `https://data.cdc.gov/resource/vjzj-u7u8.json`  
 **Update Frequency:** Weekly (Wednesdays)  
 **Grain:** Daily, State-level  
-**Date Range:** 2022-09 to 2025-12  
 
 ### Columns
 
@@ -73,10 +72,6 @@ This project integrates two CDC data sources to enable regional capacity plannin
 | Capacity | Weekly | None |
 | Demand | Daily | Aggregate to weekly in dbt |
 
-### Date Overlap
-
-- **Usable range:** October 2024 – September 2025 (~11 months)
-- Demand data extends beyond capacity data on both ends
 
 ---
 
