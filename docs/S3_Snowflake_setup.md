@@ -1,4 +1,4 @@
-# Infrastructure Setup: S3 to Snowflake Pipeline
+#  S3 to Snowflake Setup
 
 
 
